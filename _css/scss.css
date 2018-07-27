@@ -1,0 +1,32 @@
+body {
+	background-image: url(../files/tela_login.jpg);
+	background-size: 1310px 700px;
+	width: 1080px;
+	height: 600px;
+	margin: 10px auto 0;
+	position: relative;
+}
+
+.s-menu-nav {
+	width: 900px;
+	margin: 0  auto;
+}
+
+.s-menu-img {
+	float: left;
+}
+
+.s-menu-list {
+	float: right;
+}
+
+.s-menu-link {
+	text-decoration: none;
+	margin: 10px;
+	border: 1px solid #eeeeee;
+	border-radius: 2px;
+	padding: 4px 8px;
+	color: #eeeeee;
+	text-transform: uppercase;
+	font-weight: 800;
+}
