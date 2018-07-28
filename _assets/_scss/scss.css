@@ -47,6 +47,7 @@ body {
 .s-menu-link:hover {
 	background-color: #eeeeee;
 	color: #606060;
+	border-bottom: 4px solid #606060;
 }
 
 
