@@ -1,4 +1,7 @@
 # Projeto-HE
 
-Teste
-===
+Pacotes a serem instalados: 
+> Node.js<br />
+> Ruby <br />
+> NPM<br />
+
