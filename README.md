@@ -8,7 +8,11 @@ Pacotes a serem instalados:
 
 Desenvolvimento
 ---
-sass --watch scss:css
+
+```sh
+$ cd assets
+$ sass --watch css:css
+```
 
 
 
