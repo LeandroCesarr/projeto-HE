@@ -4,4 +4,12 @@ Pacotes a serem instalados:
 > Node.js<br />
 > Ruby <br />
 > NPM<br />
+> SASS<br />
+
+Desenvolvimento
+---
+sass --watch scss:css
+
+
+
 
