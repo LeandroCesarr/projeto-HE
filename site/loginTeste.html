@@ -3,19 +3,26 @@
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<script type="text/javascript" src="../assets/js/login.js"></script>
 </head>
 <body>
+	<ul class="nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Contatos</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
 	<div class="fundo">
 	</div>
 	<div class="loginbox">
 		<img src="../assets/img/fundo/icon.png" class="avatar">
 		<h1>Login</h1>
-		<form>
+		<form name="login">
 			<p>Email de Acesso</p>
-			<input type="text" name="" placeholder="Email">
+			<input type="text" placeholder="username" name="userid"></br>
 			<p>Senha</p>
-			<input type="Password" name="" placeholder="Password">
-			<input type="submit" name="" value="Login">
+			<input type="password" placeholder="password" name="pswrd"></br>
+			<input type="button" onclick="check(this.form)" value="Login">
 			<a href="">Esqueceu sua senha?</a>
 		</form>
 	

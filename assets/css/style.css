@@ -23,7 +23,7 @@ body{
 	width: 320px;
 	height: 420px;
 	color: #ffffff;
-	top: 50%;
+	top: 53%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, -50%);
@@ -71,10 +71,10 @@ h1{
 	font-size: 16px;
 }
 
-.loginbox input[type="submit"]{
-	border: none;
+.loginbox input[type="button"]{
 	outline: none;
-	height: 	40px;
+	border: none;
+	height: 40px;
 	background: #03DAC6;
 	color: #ffffff;
 	font-size: 18px;
@@ -82,13 +82,15 @@ h1{
 
 }
 
-.loginbox input[type="submit"]:hover {
+.loginbox input[type="button"]:hover {
+	outline: none;
 	cursor:pointer;
 	background:#B0C4DE;
 	color:##DCDCDC;
 }
 
 .loginbox a{
+	outline: none;
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 20px;
@@ -97,4 +99,65 @@ h1{
 
 .loginbox a:hover {
 	color: #B0C4DE;
+}
+/*------------------------menu-----------------------------*/
+
+.nav{
+	font-family: 'Roboto',sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.nav *{
+	box-sizing: border-box;
+	transition: all 0.35s ease;
+}
+
+.nav li{
+	display: inline-block;
+	list-style: outside none none;
+	margin: .5em 1em;
+	padding: 0;
+}
+
+.nav a{
+	padding: .5em 0.8em;
+	color:#000;
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+	outline: none;
+}
+.nav a:before,
+.nav a:after{
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	content: '';
+	transition: all 0.35s ease;
+	opacity: 0;
+}
+
+.nav a:before{
+	right: 0;
+	top: 0;
+	border-right: 3px solid #808080;
+	border-top: 3px solid #808080;
+	transform: translate(-100%, 50%);
+}
+
+.nav a:after{
+	left: 0;
+	bottom: 0;
+	border-left: 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	transform: translate(100%, -50%);	
+}
+
+a:hover:before,
+a:hover:after{
+	transform: translate(0%, 0%);
+	opacity: 1;
 }
