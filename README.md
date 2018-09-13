@@ -11,7 +11,7 @@ Desenvolvimento
 
 ```sh
 $ cd assets
-$ sass --watch css:css
+$ sass --watch scss:css
 ```
 
 
