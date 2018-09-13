@@ -7,21 +7,71 @@
 
 .about-header {
 	position: relative;
-	height: 35px;
+	height: 87px;
+	width: 100%;
+	position: fixed;
 	text-align: center;
 	margin: 0 auto;
 	color: $white;
+	background-color: $black;
 	top: -10px;
 	z-index: 1;
 }
 
+.about-nav {
+	display: block;
+	position: absolute;
+	left: -0px;
+	top: 20px;
+}
+
+.about-nav__list {
+	background-color: $white;
+	display: none;
+	width: 0px;
+	animation-name: deslizeMenu;
+	animation-duration: 1s;
+	position: relative;
+	border-radius: 4px;
+}
+
+.about-nav__active {
+	display: block;
+	width: 100px;
+
+}
+
+@keyframes deslizeMenu {
+    0%   {left:-100px; top:0px;}
+    25%  {left:   0px; top:0px;}
+    50%  {left:   0px; top:0px;}
+    75%  {left:   0px; top:0px;}
+    100% {left:   0px; top:0px;}
+}
+.about-nav__link {
+	display: block;
+	font-family: $font-family-poiret;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $black;
+	font-size: 26px;
+	padding: 10px;
+}
+
+.hamburger {
+	outline: none;
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+	background-color: $white;
+}
+
 .about-title {
-	width: 100%;
 	padding: 20px 0;
 	text-align: center;
-	position: fixed;
+	display: inline-block;
 	margin: 0 auto;
-	background-color: $black;
 	font-family: $font-family-script;
 }
 
@@ -40,7 +90,7 @@
 }
 
 .about-subtitle {
-	font-family: $font-family-script;
+	font-family: $font-family-poiret;
 	font-weight: $font-weight-bold;
 }
 
@@ -65,10 +115,14 @@
 }
 
 .about-people__name {
-	font-family: $font-family-script;
+	font-family: $font-family-poiret;
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 }
 
 
-
+@media all and (max-width: 425px) {
+	.header {
+		margin-top: 150px;
+	}
+}
