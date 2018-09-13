@@ -923,88 +923,121 @@
 @media all and (max-width: 425px) {
   .header {
     margin-top: 150px; } }
-.body-login {
-  background-image: url(../img/bgPineaplle.jpg);
-  background-size: cover;
-  max-width: 1080px;
-  height: 500px;
-  margin: 20px auto 0;
-  position: relative; }
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+  /* estilos aqui */ }
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  /* estilos aqui */ }
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* estilos aqui */ }
+/* Desktop grande */
+@media (min-width: 1200px) {
+  /* estilos aqui */
+  .body-login {
+    background-image: url(../img/bgPineaplle.jpg);
+    background-size: cover;
+    max-width: 1080px;
+    height: 500px;
+    margin: 20px auto 0;
+    position: relative; }
 
-.s-menu-nav {
-  max-width: 900px;
-  height: 80px;
-  margin: 0  auto; }
+  .s-menu-nav {
+    max-width: 900px;
+    height: 80px;
+    margin: 0  auto; }
 
-.s-menu-list {
-  text-align: right; }
+  .s-menu-list {
+    text-align: right; }
 
-.s-fundo-login {
-  width: 320px;
-  height: 420px;
-  background-color: #000;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
-  padding: 70px 30px;
-  border-radius: 15px;
-  opacity: 0.5; }
+  .s-menu-link {
+    text-decoration: none;
+    margin: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 8px 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    transition: background-color .5s; }
 
-.s-tela-login {
-  width: 320px;
-  height: 420px;
-  color: #ffffff;
-  top: 13%;
-  left: 35%;
-  position: relative;
-  box-sizing: border-box;
-  padding: 70px 30px;
-  border-radius: 15px; }
+  .s-menu-link:hover {
+    background-color: #eeeeee;
+    color: #606060;
+    border-bottom: 4px solid #606060; }
 
-.s-icon-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px); }
+  .s-fundo-login {
+    background: #000000;
+    width: 320px;
+    height: 420px;
+    color: #ffffff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+    opacity: 0.5;
+    z-index: -1; }
 
-.s-menu-link {
-  text-decoration: none;
-  margin: 10px;
-  border-bottom: 1px solid #eeeeee;
-  padding: 8px 16px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: "Roboto", sans-serif;
-  transition: background-color .5s; }
+  .s-tela-login {
+    width: 320px;
+    height: 420px;
+    color: #ffffff;
+    top: 63%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 150px 30px;
+    border-radius: 15px;
+    z-index: 1; }
 
-.s-menu-link:hover {
-  background-color: #eeeeee;
-  color: #606060;
-  border-bottom: 4px solid #606060; }
+  .s-icon-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 50px); }
 
-.s-text-login {
-  color: #fff;
-  text-align: left; }
+  .s-tela-login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold; }
 
-.s-form-input {
-  padding: 6px 20px;
-  margin: 8px;
-  display: block;
-  background-color: #606060;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif; }
+  .s-tela-login input {
+    width: 100%;
+    margin-bottom: 20px; }
 
-.s-input-password a {
-  margin: 8px;
-  color: #eeeeee;
-  text-decoration: none;
-  font-size: 14px; }
+  .s-form-login input[type="login"], input[type="Password"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px; }
+
+  .s-form-login input[type="button"] {
+    outline: none;
+    border: none;
+    height: 40px;
+    background: #452803;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px; }
+
+  .s-button-login:hover {
+    outline: none; }
+
+  .s-form-login a {
+    outline: none;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray; } }
 
 /*# sourceMappingURL=app.css.map */
