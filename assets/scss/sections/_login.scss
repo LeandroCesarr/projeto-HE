@@ -1,257 +1,223 @@
-
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) { 
-     /* estilos aqui */
- }
- 
-/* Telefones em paisagem a tablet em retrato */
-@media (max-width: 767px) {
-     /* estilos aqui */
+/* Desktop grande */
+.body-login {
+	background-image: url(../img/bgPineaplle.jpg);
+	background-size: cover;
+	max-width: 1080px;
+	height: 500px;
+	margin: 20px auto 0;
+	position: relative;
 }
- 
+
+.s-fundo-login{
+	background: #000000;
+	width: 320px;
+	height: 420px;
+	color: #ffffff;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 15px;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.s-tela-login{
+	width: 320px;
+	height: 420px;
+	color: #ffffff;
+	top: 63%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 150px 30px;
+	border-radius: 15px;
+	z-index: 1;
+}
+
+.s-icon-avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 50px);
+}
+
+.s-tela-login p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.s-tela-login input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.s-form-login input[type="login"], input[type="Password"]{
+	outline: hidden;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	height: 40px;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.s-form-login input[type="button"]{
+	outline: hidden;
+	border: none;
+	height: 40px;
+	background-color: #07a79d;
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.s-button-login:hover {
+	outline: hidden;
+}
+
+.s-form-login a{
+	outline: hidden;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgray;
+}
+.s-menu-mobile{
+	display: none;	
+}
+.s-menu-nav {
+	max-width: 900px;
+	height: 80px;
+	margin: 0  auto;
+}
+
+.s-menu-list {
+	text-align: right;
+}
+
+.s-menu-link {
+	text-decoration: none;
+	margin: 10px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 8px 16px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: $font-family-roboto;
+	transition: background-color .5s;
+}
+
+.s-menu-link:hover {
+	background-color: #eeeeee;
+	color: #606060;
+	border-bottom: 4px solid #606060;
+}
+
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 1999px) {
      /* estilos aqui */
      .body-login {
-		background-image: url(../img/bgPineaplle.jpg);
-		background-size: cover;
 		max-width: 768px;
 		height: 400px;
-		margin: 20px auto 0;
-		position: relative;
-	}
-
-	.s-menu-nav {
-		max-width: 900px;
-		height: 80px;
-		margin: 0  auto;
-	}
-
-	.s-menu-list {
-		text-align: right;
-	}
-
-	.s-menu-link {
-		text-decoration: none;
-		margin: 10px;
-		border-bottom: 1px solid #eeeeee;
-		padding: 8px 16px;
-		color: #fff;
-		text-transform: uppercase;
-		font-weight: 800;
-		font-family: $font-family-roboto;
-		transition: background-color .5s;
-	}
-
-	.s-menu-link:hover {
-		background-color: #eeeeee;
-		color: #606060;
-		border-bottom: 4px solid #606060;
 	}
 
 	.s-fundo-login{
-			background: #000000;
 			width: 320px;
 			height: 420px;
-			color: #ffffff;
 			top: 60%;
 			left: 50%;
-			position: absolute;
-			transform: translate(-50%, -50%);
-			box-sizing: border-box;
 			padding: 70px 30px;
-			border-radius: 15px;
-			opacity: 0.5;
-			z-index: -1;
 	}
 
 	.s-tela-login{
 		width: 320px;
 		height: 420px;
-		color: #ffffff;
 		top: 73%;
 		left: 50%;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		box-sizing: border-box;
-		padding: 150px 30px;
-		border-radius: 15px;
-		z-index: 1;
 	}
 	
 	.s-icon-avatar{
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		position: absolute;
 		top: -20px;
-		left: calc(50% - 50px);
-	}
-	
-	.s-tela-login p{
-		margin: 0;
-		padding: 0;
-		font-weight: bold;
-	}
-
-	.s-tela-login input{
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
-	.s-form-login input[type="login"], input[type="Password"]{
-		outline: hidden;
-		border: none;
-		border-bottom: 1px solid #ffffff;
-		background: transparent;
-		height: 40px;
-		color: #ffffff;
-		font-size: 16px;
-	}
-
-	.s-form-login input[type="button"]{
-		outline: hidden;
-		border: none;
-		height: 40px;
-		background-color: #07a79d;
-		color: #ffffff;
-		font-size: 18px;
-		border-radius: 20px;
-	}
-
-	.s-button-login:hover {
-		outline: hidden;
-	}
-
-	.s-form-login a{
-		outline: hidden;
-		text-decoration: none;
-		font-size: 12px;
-		line-height: 20px;
-		color: darkgray;
 	}
 
 }
- 
-/* Desktop grande */
-@media (min-width: 1200px) {
-    /* estilos aqui */
-	.body-login {
-		background-image: url(../img/bgPineaplle.jpg);
-		background-size: cover;
-		max-width: 1080px;
-		height: 500px;
-		margin: 20px auto 0;
-		position: relative;
-	}
 
-	.s-menu-nav {
-		max-width: 900px;
-		height: 80px;
-		margin: 0  auto;
-	}
-
-	.s-menu-list {
-		text-align: right;
-	}
-
-	.s-menu-link {
-		text-decoration: none;
-		margin: 10px;
-		border-bottom: 1px solid #eeeeee;
-		padding: 8px 16px;
-		color: #fff;
-		text-transform: uppercase;
-		font-weight: 800;
-		font-family: $font-family-roboto;
-		transition: background-color .5s;
-	}
-
-	.s-menu-link:hover {
-		background-color: #eeeeee;
-		color: #606060;
-		border-bottom: 4px solid #606060;
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+     /* estilos aqui */
+     .body-login {
+		max-width: 767px;
 	}
 
 	.s-fundo-login{
-			background: #000000;
 			width: 320px;
 			height: 420px;
-			color: #ffffff;
 			top: 60%;
 			left: 50%;
-			position: absolute;
-			transform: translate(-50%, -50%);
-			box-sizing: border-box;
 			padding: 70px 30px;
-			border-radius: 15px;
-			opacity: 0.5;
-			z-index: -1;
 	}
 
 	.s-tela-login{
 		width: 320px;
 		height: 420px;
-		color: #ffffff;
-		top: 63%;
+		top: 73%;
 		left: 50%;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		box-sizing: border-box;
-		padding: 150px 30px;
-		border-radius: 15px;
-		z-index: 1;
 	}
 	
 	.s-icon-avatar{
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		position: absolute;
 		top: -20px;
-		left: calc(50% - 50px);
+	}
+
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 520px) { 
+     /* estilos aqui */
+
+     .body-login {
+		max-width: 520px;
+		z-index: -1;
+	}
+
+	.s-fundo-login{
+			width: 320px;
+			height: 420px;
+			top: 50%;
+			left: 50%;
+			padding: 70px 30px;
+	}
+
+	.s-tela-login{
+		width: 320px;
+		height: 420px;
+		top: 53%;
+		left: 50%;
 	}
 	
-	.s-tela-login p{
-		margin: 0;
-		padding: 0;
-		font-weight: bold;
+	.s-icon-avatar{
+		top: -30px;
 	}
+	.s-menu-nav{
+		display: none;
+	}
+	.s-menu-mobile{
+		max-width: 520px;
+		display: block;
+		top: 2px;
+		text-align: left;
+		z-index: 1
+	}
+ }
+ 
 
-	.s-tela-login input{
-		width: 100%;
-		margin-bottom: 20px;
-	}
+ 
 
-	.s-form-login input[type="login"], input[type="Password"]{
-		outline: hidden;
-		border: none;
-		border-bottom: 1px solid #ffffff;
-		background: transparent;
-		height: 40px;
-		color: #ffffff;
-		font-size: 16px;
-	}
 
-	.s-form-login input[type="button"]{
-		outline: hidden;
-		border: none;
-		height: 40px;
-		background-color: #07a79d;
-		color: #ffffff;
-		font-size: 18px;
-		border-radius: 20px;
-	}
-
-	.s-button-login:hover {
-		outline: hidden;
-	}
-
-	.s-form-login a{
-		outline: hidden;
-		text-decoration: none;
-		font-size: 12px;
-		line-height: 20px;
-		color: darkgray;
-	}
-}
+ 
