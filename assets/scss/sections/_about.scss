@@ -1,10 +1,19 @@
-.body-about {
-	// background-color: $black;
+.about-body {
+	background-color: $black;
 	background-image: url(../img/fundo/fundo_01.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	margin: 0;
+}
+
+
+@keyframes deslizeMenu {
+    0%   {left:-100px; top:0px;}
+    25%  {left:   0px; top:0px;}
+    50%  {left:   0px; top:0px;}
+    75%  {left:   0px; top:0px;}
+    100% {left:   0px; top:0px;}
 }
 
 .about-header {
@@ -46,13 +55,6 @@
 
 }
 
-@keyframes deslizeMenu {
-    0%   {left:-100px; top:0px;}
-    25%  {left:   0px; top:0px;}
-    50%  {left:   0px; top:0px;}
-    75%  {left:   0px; top:0px;}
-    100% {left:   0px; top:0px;}
-}
 .about-nav__link {
 	display: block;
 	font-family: $font-family-poiret;
@@ -63,7 +65,6 @@
 	color: $black;
 	font-size: 26px;
 	padding: 10px;
-	transition: .3s	; 
 }
 
 .hamburger {
@@ -155,7 +156,7 @@
 }
 @media all and (max-width: 465px) {
 	.about-container {
-		// margin-top: 260px;
+		margin-top: 350px;
 	}
 
 	.about-title {
@@ -164,5 +165,6 @@
 
 	.body-about {
 		max-width: 465px;
+		background-position: center;
 	}
 }

@@ -998,7 +998,8 @@
   transform: rotate(-90deg);
 }
 
-.body-about {
+.about-body {
+  background-color: #000000;
   background-image: url(../img/fundo/fundo_01.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -1006,6 +1007,28 @@
   margin: 0;
 }
 
+@keyframes deslizeMenu {
+  0% {
+    left: -100px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
 .about-header {
   position: relative;
   height: 87px;
@@ -1043,28 +1066,6 @@
   width: 250px;
 }
 
-@keyframes deslizeMenu {
-  0% {
-    left: -100px;
-    top: 0px;
-  }
-  25% {
-    left: 0px;
-    top: 0px;
-  }
-  50% {
-    left: 0px;
-    top: 0px;
-  }
-  75% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
 .about-nav__link {
   display: block;
   font-family: "Poiret One", cursive;
@@ -1075,7 +1076,6 @@
   color: #000000;
   font-size: 26px;
   padding: 10px;
-  transition: 0.3s;
 }
 
 .hamburger {
@@ -1165,12 +1165,17 @@
 }
 
 @media all and (max-width: 465px) {
+  .about-container {
+    margin-top: 350px;
+  }
+
   .about-title {
     margin-left: 40px;
   }
 
   .body-about {
     max-width: 465px;
+    background-position: center;
   }
 }
 /* Telefones em paisagem e abaixo */
