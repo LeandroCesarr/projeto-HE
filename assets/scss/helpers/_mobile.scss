@@ -1,0 +1,13 @@
+.mobile-on {
+	display: none;
+}
+
+@media all and (max-width: 465px) {
+	.mobile-off {
+		display: none !important;
+	}
+
+	.mobile-on {
+		display: block !important;
+	}
+}

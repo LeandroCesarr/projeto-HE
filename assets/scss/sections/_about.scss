@@ -21,12 +21,14 @@
 .about-nav {
 	display: block;
 	position: absolute;
+	text-align: left;
 	left: -0px;
 	top: 20px;
 }
 
 .about-nav__list {
 	background-color: $white;
+	text-align: left;
 	display: none;
 	width: 0px;
 	animation-name: deslizeMenu;
@@ -37,7 +39,8 @@
 
 .about-nav__active {
 	display: block;
-	width: 100px;
+	width: 250px;
+
 
 }
 
@@ -54,9 +57,16 @@
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 	text-decoration: none;
+	outline: none;
 	color: $black;
 	font-size: 26px;
 	padding: 10px;
+	transition: .3s	; 
+}
+
+.about-nav__link:hover {
+	background-color: $black;
+	color: $white;
 }
 
 .hamburger {
@@ -68,15 +78,15 @@
 }
 
 .about-title {
-	padding: 20px 0;
+	padding: 20px;
 	text-align: center;
 	display: inline-block;
 	margin: 0 auto;
 	font-family: $font-family-script;
 }
 
-.header {
-	max-width: 960px;
+.about-container {
+	// max-width: 960px;
 	height: auto;
 	margin: 400px auto 0;
 	padding: 10px;
@@ -103,6 +113,10 @@
 	text-align: center;
 }
 
+.about--people__title {
+	text-align: left;
+}
+
 .about-people__container {
 	position: relative;
 	width: 300px;
@@ -120,9 +134,23 @@
 	text-transform: uppercase;
 }
 
+.about-history {
+	margin-top: 40px; 
+}
 
-@media all and (max-width: 425px) {
-	.header {
-		margin-top: 150px;
+.about--footer__text {
+	text-align: center;
+}
+
+.about--footer_logo {
+	font-family: $font-family-script;
+}
+@media all and (max-width: 465px) {
+	.about-container {
+		margin-top: 100px;
+	}
+
+	.about-title {
+		margin-left: 40px;
 	}
 }
