@@ -1173,9 +1173,8 @@
     margin-left: 40px;
   }
 
-  .body-about {
-    max-width: 465px;
-    background-position: center;
+  .about-body {
+    background-position: top;
   }
 }
 /* Telefones em paisagem e abaixo */
