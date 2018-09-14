@@ -1,8 +1,10 @@
 .body-about {
 	// background-color: $black;
-	background-image: url(../img/bg_pineapple.jpg);
+	background-image: url(../img/fundo/fundo_01.jpg);
 	background-size: cover;
-	background-attachment: fixed;	
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
 }
 
 .about-header {
@@ -13,7 +15,7 @@
 	text-align: center;
 	margin: 0 auto;
 	color: $white;
-	background-color: $black;
+	background-color: #f7ea39;
 	top: -10px;
 	z-index: 1;
 }
@@ -64,17 +66,21 @@
 	transition: .3s	; 
 }
 
-.about-nav__link:hover {
-	background-color: $black;
-	color: $white;
-}
-
 .hamburger {
 	outline: none;
 }
 
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
 	background-color: $white;
+	box-shadow: 0px 0px 4px #606060;
+}
+
+.hamburger-inner::after, .hamburger-inner::before {
+	box-shadow: 0px 0px 4px #606060;	
+}
+
+.is-active span {
+	box-shadow: none;
 }
 
 .about-title {
@@ -83,20 +89,21 @@
 	display: inline-block;
 	margin: 0 auto;
 	font-family: $font-family-script;
+	text-shadow: 0 0 10px #606060;
 }
 
 .about-container {
 	// max-width: 960px;
 	height: auto;
 	margin: 400px auto 0;
-	padding: 10px;
+	padding: 10px 0;
 	// box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	color: $white;
 }
 
 .about-backgorund {
 	padding: 10px;
-	background-color: $black;
+	background-color: #00ca98;
 }
 
 .about-subtitle {
@@ -105,7 +112,8 @@
 }
 
 .about-story {
-	font-family: $font-family-poiret;
+	// font-family: $font-family-poiret;
+	font-size: 18px;
 }
 .about-people {
 	position: relative;
@@ -124,7 +132,7 @@
 	padding: 0 5px;
 	margin: 0 auto;
 	display: inline-block;
-	background-color: #000000;
+	background-color: #00ca98;
 	z-index: -0;
 }
 
@@ -147,10 +155,14 @@
 }
 @media all and (max-width: 465px) {
 	.about-container {
-		margin-top: 100px;
+		// margin-top: 260px;
 	}
 
 	.about-title {
 		margin-left: 40px;
+	}
+
+	.body-about {
+		max-width: 465px;
 	}
 }
