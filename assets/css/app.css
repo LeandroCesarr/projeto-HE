@@ -961,6 +961,7 @@
   .about-title {
     margin-left: 40px; }
 
+<<<<<<< HEAD
   .body-about {
     max-width: 465px;
     background-position: center; } }
@@ -1073,6 +1074,20 @@
   color: #606060;
   border-bottom: 4px solid #606060; }
 
+=======
+  .about-body {
+    background-position: top;
+  }
+}
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+  /* estilos aqui */
+}
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  /* estilos aqui */
+}
+>>>>>>> 142b1b9f95d69c5bb2b830b8d757eaedbc8ac745
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 1999px) {
   /* estilos aqui */
