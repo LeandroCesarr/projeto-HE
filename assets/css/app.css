@@ -961,10 +961,8 @@
   .about-title {
     margin-left: 40px; }
 
-<<<<<<< HEAD
-  .body-about {
-    max-width: 465px;
-    background-position: center; } }
+  .about-body {
+    background-position: top; } }
 /* Desktop grande */
 .body-login {
   background-image: url(../img/bgPineaplle.jpg);
@@ -1074,20 +1072,6 @@
   color: #606060;
   border-bottom: 4px solid #606060; }
 
-=======
-  .about-body {
-    background-position: top;
-  }
-}
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) {
-  /* estilos aqui */
-}
-/* Telefones em paisagem a tablet em retrato */
-@media (max-width: 767px) {
-  /* estilos aqui */
-}
->>>>>>> 142b1b9f95d69c5bb2b830b8d757eaedbc8ac745
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 1999px) {
   /* estilos aqui */
@@ -1149,7 +1133,8 @@
     width: 320px;
     height: 420px;
     top: 53%;
-    left: 50%; }
+    left: 50%;
+    z-index: -1; }
 
   .s-icon-avatar {
     top: -30px; }
@@ -1158,10 +1143,48 @@
     display: none; }
 
   .s-menu-mobile {
-    max-width: 520px;
-    display: block;
-    top: 2px;
-    text-align: left;
-    z-index: 1; } }
+    position: fixed;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border: none; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    box-shadow: 2px;
+    margin: 6px 5px;
+    transition: 0.6s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+
+  .change .bar2 {
+    opacity: 0; }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  .s-menu-block {
+    margin-top: 12px;
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+    background-color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: -1; }
+
+  .s-menu-block-s {
+    color: transparent; } }
 
 /*# sourceMappingURL=app.css.map */

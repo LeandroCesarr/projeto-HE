@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>PineappleDevs_Login</title>
   <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+  <script type="text/javascript">
+    function myFunction(x) {
+    x.classList.toggle("change");
+    var display = document.getElementById("teste").style.display;
+        if(display == "block")
+            document.getElementById("teste").style.display = 'none';
+        else
+            document.getElementById("teste").style.display = 'block';
+          document.getElementById("teste").innerHTML = "<nav class='s-menu-block'><a class='s-menu-block-s' href='#''>.......</a><a class='s-menu-block' href='#''>Login</a><a class='s-menu-block' href='#''>Ajuda</a><a class='s-menu-block' href='#''>Contato</a><a class='s-menu-block' href='_about.html'>Quem somos</a></nav>";
+    }
+  </script>
 </head>
 
 <body class="body-login">
@@ -18,11 +29,17 @@
           <a class="s-menu-link" href="_about.html">Quem somos</a>
         </nav>
       </header>
-      <div class="s-menu-mobile">
-          <a class="s-menu-link" href="#">Menu</a>
-        </div>
-    </div>  
+    </div>
+    <button class="s-menu-mobile" type="button" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+      <div id="teste"></div> 
+      
   </section>
+
+
 
   <section class="s-tela-login">
     <div>
