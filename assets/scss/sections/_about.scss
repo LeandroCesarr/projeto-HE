@@ -157,7 +157,7 @@
 }
 @media all and (max-width: 465px) {
 	.about-container {
-		margin-top: 75vw;
+		margin-top: 70vw;
 	}
 
 	.about-title {
@@ -165,6 +165,7 @@
 	}
 
 	.about-body {
-		background-position: top;
+		background-position: center 75px;
+		background-size: contain;
 	}
 }
