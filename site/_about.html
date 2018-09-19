@@ -6,28 +6,25 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
-  <script type="text/javascript" src="../assets/js/_menu-hamburger.js"></script>
 </head>
 
 <body class="about-body">
-  <span heigh="1" id="Home">&enbsp;</span>
+  <span heigh="1" id="home">&enbsp;</span>
   <header class="about-header">
 
     <nav class="about-nav">
 
-      <button class="hamburger hamburger--spring" type="button" onclick="menuToggle()" id="navMenu">
+      <button class="hamburger hamburger--spring" type="button" id="nav-menu-button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button> 
 
       <div class="about-nav__list" id="navBox">
-        
-        <a onclick="menuToggle()" class="about-nav__link" href="#Home">PineappleDevs</a>
-        <a onclick="menuToggle()" class="about-nav__link" href="#people">Equipe</a>
-        <a onclick="menuToggle()" class="about-nav__link" href="#history">Nossa historia</a>
-        <a onclick="menuToggle()" class="about-nav__link" href="#">contato</a>
-
+        <a class="about-nav__link" href="#home" data-offset="0">PineappleDevs</a>
+        <a class="about-nav__link" href="#people" data-offset="0">Equipe</a>
+        <a class="about-nav__link" href="#history" data-offset="">Nossa historia</a>
+        <a class="about-nav__link" href="#" data-offset="">contato</a>
       </div>
     </nav>
 
@@ -43,25 +40,20 @@
       </h3>
       <p class="about-story">
           Somos uma equipe que nasceu no primeiro semestre da faculdade de Análise e Desenvolvimento de Sistemas, na instituição Fatec Franca.
-       </p>
-       <p class="about-story">
+          <br /><br />
          Nosso primeiro objetivo foi construir um Web Site para o gerenciamento de uma pequena oficina, na qual ainda não tinhamos muito conhecimento das linguagens apropriadas e, por conta disso, fomos atrás de informações de quais linguagens seriam as mais apropriadas para a execução do projeto e nos dedicamos a estudá-las.
-       </p>
-       <p class="about-story">
+         <br /><br />
          Inicialmente e atualmente, os integrantes da equipe são somente dois:
-       </p>
-       <p class="about-story">
+         <br /><br />
          Fernando Souza Marques e Leandro Cesar Silva
-       </p>
-       <p class="about-story" id="people">
+         <br /><br />
          Quem teve a ideia de fundar a PineaplleDevs foi o Leandro, na qual visava o projeto do Web Site da oficina de seu tio.
-       </p>
-       <p class="about-story" >
+         <br /><br />
         Enfim, nossa equipe procura crescer cada vez mais e busca ajudar quem precisa.
        </p>
        <hr/>
        
-      <section class="about-people">
+      <section id="people" class="about-people">
           <h3 class="about--people__title">Equipe</h3>
           <div class="about-people__container">
            <img src="../assets/img/leandro_perfil.jpg">
@@ -85,14 +77,14 @@
            <img src="../assets/img/300x350.jpg">
            <h4 class="about-people__name">Lorem Ipsum</h4>
            <span>Lorem Ipsum</span>
-           <p class="about-people__description" id="history">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           <p class="about-people__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
            consequat.</p>
           </div>
       </section>
       <hr />
-      <section class="about-history">
+      <section id="history" class="about-history">
         <h2 class="about--history__title">History</h2>
         <p class="about--history__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -114,5 +106,9 @@
     </div>
   </div>
 
+
+
+  <script type="text/javascript" src="../assets/js/libraries/_jump.js"></script>
+  <script type="text/javascript" src="../assets/js/_about.js"></script>
 </body>
 </html>
