@@ -1,4 +1,6 @@
-# Projeto-HE
+#  pineappleDevs
+
+Esse projeto visa o desenvovimento pessoal dos envolvidos, criando de inicio, um serviço de gerenciamento de oficina totalmente online.
 
 Pacotes a serem instalados: 
 > Node.js<br />
