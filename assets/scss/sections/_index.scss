@@ -1,12 +1,30 @@
 .about-body {
 	background-color: $black;
-	background-image: url(../img/fundo/fundo_01.jpg);
+	background-image: url(../img/fundo/fundo_01_edit.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 0;
 }
+
+
+body::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+  }
+  body::-webkit-scrollbar-track {
+	background-color: #766e63;
+	border-radius: px;
+  }
+  body::-webkit-scrollbar-thumb {
+	background-color: #f7ea39;
+	border-radius: px;
+  }
+  body::-webkit-scrollbar-corner {
+	background-color: #0f981a;
+	visibility: visible;
+  }
 
 
 @keyframes deslizeMenu {
@@ -66,10 +84,16 @@
 	color: $black;
 	font-size: 26px;
 	padding: 10px;
+	transition-duration: .6s;
+}
+
+.about-nav__link:hover{
+	text-shadow: 0 0 6px #3d3c3c;
 }
 
 .hamburger {
 	outline: none;
+	margin-top: 8px;
 }
 
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
@@ -97,7 +121,7 @@
 .about-container {
 	// max-width: 960px;
 	height: auto;
-	margin: 416px auto 0;
+	margin: 426px auto 0;
 	padding: 10px 0 0;
 	// box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	color: $white;
@@ -144,6 +168,10 @@
 	text-transform: uppercase;
 }
 
+.about-people__description {
+	margin: 10px 20px;
+}
+
 .about-history {
 	margin-top: 40px; 
 }
@@ -155,9 +183,43 @@
 .about--footer_logo {
 	font-family: $font-family-script;
 }
+
+.projects__box {
+	max-width: 900px;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+
+.projects__box--description {
+	display: inline-block;
+	max-width: 560px;
+	margin: 10px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.projects__box--link {
+	background-color: #fceb54;
+	text-decoration: none;
+	display: inline-block;
+	margin: 6px 0;
+	padding: 10px 6px;
+	color: $black;
+	border-radius: 6px;
+	border: 1px solid #f7ea39;
+	font-family: $font-family-roboto;
+	font-weight: $font-weight-medium;
+
+	transition-duration: .6s;
+}
+
+.projects__box--link:hover {
+	margin-left: 20px;
+}
+
 @media all and (max-width: 465px) {
 	.about-container {
-		margin-top: 70vw;
+		margin-top: 75vw;
 	}
 
 	.about-title {
