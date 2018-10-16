@@ -1,4 +1,4 @@
-#  pineappleDevs
+#  pineappleDevs <img src="assets/img/pineapple.svg" width="50" height="60" padding="0">
 
 Esse projeto visa o desenvovimento pessoal dos envolvidos, criando de inicio, um serviço de gerenciamento de oficina totalmente online.
 
