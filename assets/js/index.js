@@ -16,7 +16,7 @@
 
   function toggleMenu() {
     navMenuButton.classList.toggle("is-active");
-    navMenu.classList.toggle("about-nav__active");
+    navMenu.classList.toggle("header-nav__active");
   }
 
   function setupNavMenuLinks() {

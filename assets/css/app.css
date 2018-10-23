@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-.mobile-on {
-  display: none; }
+.t-container {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto; }
 
-@media all and (max-width: 465px) {
-  .mobile-off {
-    display: none !important; }
+.t-background-sections {
+  background-color: #00ca98; }
 
-  .mobile-on {
-    display: block !important; } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -816,14 +815,16 @@
   bottom: 0;
   transform: rotate(-90deg); }
 
-.about-body {
+.body {
   background-color: #000000;
   background-image: url(../img/fundo/fundo_01_edit.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  color: #ffffff; }
 
 body::-webkit-scrollbar {
   width: 6px;
@@ -857,7 +858,7 @@ body::-webkit-scrollbar-corner {
   100% {
     left: 0px;
     top: 0px; } }
-.about-header {
+.header {
   position: relative;
   height: 87px;
   width: 100%;
@@ -869,14 +870,14 @@ body::-webkit-scrollbar-corner {
   top: -10px;
   z-index: 1; }
 
-.about-nav {
+.header-nav {
   display: block;
   position: absolute;
   text-align: left;
   left: -0px;
   top: 20px; }
 
-.about-nav__list {
+.header-nav__list {
   background-color: #ffffff;
   text-align: left;
   display: none;
@@ -886,11 +887,11 @@ body::-webkit-scrollbar-corner {
   position: relative;
   border-radius: 4px; }
 
-.about-nav__active {
+.header-nav__active {
   display: block;
   width: 250px; }
 
-.about-nav__link {
+.header-nav__link {
   display: block;
   font-family: "Poiret One", cursive;
   font-weight: 700;
@@ -902,7 +903,7 @@ body::-webkit-scrollbar-corner {
   padding: 10px;
   transition-duration: .6s; }
 
-.about-nav__link:hover {
+.header-nav__link:hover {
   text-shadow: 0 0 6px #3d3c3c; }
 
 .hamburger {
@@ -919,7 +920,7 @@ body::-webkit-scrollbar-corner {
 .is-active span {
   box-shadow: none; }
 
-.about-title {
+.header-title {
   padding: 20px;
   text-align: center;
   display: inline-block;
@@ -927,71 +928,61 @@ body::-webkit-scrollbar-corner {
   font-family: "Kaushan Script", cursive;
   text-shadow: 0 0 10px #606060; }
 
-.about-container {
-  height: auto;
-  margin: 426px auto 0;
-  padding: 10px 0 0;
-  color: #ffffff; }
+.s-summary {
+  margin-top: 42vw;
+  font-family: "Poiret One", cursive; }
 
-.about-backgorund {
-  padding: 10px;
-  background-color: #00ca98; }
+.s-summary--title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 6px; }
 
-.about-subtitle {
-  font-family: "Poiret One", cursive;
+.s-team {
+  font-family: "Poiret One", cursive; }
+
+.s-team--title {
+  font-size: 24px;
   font-weight: 700; }
 
-.about-story {
-  font-size: 18px; }
+.s-team--persons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
 
-.about-people {
-  position: relative;
-  margin: 0 auto;
+.s-team--persons__box {
+  flex-basis: 33,3%;
+  width: 300px;
+  padding: 0 5px;
+  margin: 10px auto;
   text-align: center; }
 
-.about--people__title {
+.s-history {
+  font-family: "Poiret One", cursive; }
+
+.s-projects {
+  text-align: center;
+  font-family: "Poiret One", cursive; }
+
+.s-projects--title {
   text-align: left; }
 
-.about-people__container {
-  position: relative;
-  width: 300px;
-  height: 600px;
-  padding: 0 5px;
-  margin: 0 auto;
+.s-projects--box {
   display: inline-block;
-  background-color: #00ca98;
-  z-index: -0; }
-
-.about-people__name {
-  font-family: "Poiret One", cursive;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.about-people__description {
-  margin: 10px 20px; }
-
-.about-history {
-  margin-top: 40px; }
-
-.about--footer__text {
+  margin: 10px auto;
   text-align: center; }
 
-.about--footer_logo {
-  font-family: "Kaushan Script", cursive; }
-
-.projects__box {
-  max-width: 900px;
-  margin: 0 auto 20px;
-  text-align: center; }
-
-.projects__box--description {
+.s-projects--box__about {
   display: inline-block;
   max-width: 560px;
   margin: 10px;
   vertical-align: top;
   text-align: left; }
 
-.projects__box--link {
+.s-projects--box__title {
+  margin-top: 0; }
+
+.s-projects--box__link {
   background-color: #fceb54;
   text-decoration: none;
   display: inline-block;
@@ -1004,19 +995,25 @@ body::-webkit-scrollbar-corner {
   font-weight: 500;
   transition-duration: .6s; }
 
-.projects__box--link:hover {
+.s-projects--box__link:hover {
   margin-left: 20px; }
 
-@media all and (max-width: 465px) {
-  .about-container {
-    margin-top: 75vw; }
+@media only screen and (max-width: 1023px) {
+  .s-projects--box__about {
+    max-width: 300px; }
 
-  .about-title {
-    margin-left: 40px; }
+  .s-summary {
+    margin-top: 76vw; }
 
-  .about-body {
-    background-position: center 75px;
-    background-size: contain; } }
+  .header-title {
+    margin-left: 40px; } }
+@media only screen and (min-width: 666px) and (max-width: 1023px) {
+  .s-summary {
+    margin-top: 50vw; } }
+@media only screen and (max-width: 665px) {
+  .body {
+    background-size: contain;
+    background-position: center 75px; } }
 /* Desktop grande */
 .body-login {
   background-image: url(../img/bgPineaplle.jpg);
