@@ -47,6 +47,10 @@
   }
 
   construct();
+  
+  AOS.init({
+    offset: 160,
+  });
 
 })();
 

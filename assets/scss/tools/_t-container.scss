@@ -3,6 +3,11 @@
     padding: 0 10px;
     margin: 0 auto;
 }
-.t-background-sections{
+.t-background-green{
     background-color: $green-bg;
+    background-size: contain;
+}
+
+.t-background-green-dark{
+    background-color: #007F60;
 }

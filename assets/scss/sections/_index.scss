@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .body {
 	background-color: $black;
 	background-image: url(../img/fundo/fundo_01_edit.jpg);
@@ -29,14 +33,6 @@ body::-webkit-scrollbar {
   }
 
 
-@keyframes deslizeMenu {
-    0%   {left:-100px; top:0px;}
-    25%  {left:   0px; top:0px;}
-    50%  {left:   0px; top:0px;}
-    75%  {left:   0px; top:0px;}
-    100% {left:   0px; top:0px;}
-}
-
 .header {
 	position: relative;
 	height: 87px;
@@ -61,18 +57,18 @@ body::-webkit-scrollbar {
 .header-nav__list {
 	background-color: $white;
 	text-align: left;
-	display: none;
-	width: 0px;
-	animation-name: deslizeMenu;
-	animation-duration: 1s;
+	// display: none;
+	width: 256px;
+	// height: 100vh;
+	transition-duration: .6s;
 	position: relative;
 	border-radius: 4px;
+	transform: translateX(-300px)
 }
 
 .header-nav__active {
-	display: block;
-	width: 250px;
-
+	// display: block;
+	transform: translateX(0px);
 
 }
 
@@ -99,12 +95,12 @@ body::-webkit-scrollbar {
 }
 
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
-	background-color: $white;
-	box-shadow: 0px 0px 4px #606060;
+	background-color: $green-text;
+	// box-shadow: 0px 0px 4px #606060;
 }
 
 .hamburger-inner::after, .hamburger-inner::before {
-	box-shadow: 0px 0px 4px #606060;	
+	// box-shadow: 0px 0px 4px #606060;	
 }
 
 .is-active span {
@@ -117,25 +113,36 @@ body::-webkit-scrollbar {
 	display: inline-block;
 	margin: 0 auto;
 	font-family: $font-family-script;
-	text-shadow: 0 0 10px #606060;
+	// text-shadow: 0 0 10px #606060;
+	color: $green-text;
 }
+
+
 
 .s-summary {
     margin-top: 42vw;
-    font-family: $font-family-poiret;
 }
 
 .s-summary--title {
-    font-size: 24px;
+	font-size: 35px;
+	padding-top: 6px;
     font-weight: $font-weight-bold;
-    padding-top: 6px;
+	font-family: $font-family-poiret;
+	color: $green-text;
 }
+
+.s-summary--description {
+	font-family: $font-family-roboto;
+	color: #eeeeee;
+	font-size: 14px;
+}
+
 .s-team {
     font-family: $font-family-poiret;
 }
 .s-team--title {
     font-size: 24px;
-    font-weight: $font-weight-bold;
+	font-weight: $font-weight-bold;
 }
 
 .s-team--persons {
@@ -157,6 +164,10 @@ body::-webkit-scrollbar {
     font-family: $font-family-poiret;
 }
 
+.s-history--title {
+
+}
+
 .s-projects {
 	text-align: center;
 	font-family: $font-family-poiret;
@@ -164,6 +175,7 @@ body::-webkit-scrollbar {
 
 .s-projects--title {
 	text-align: left;
+
 }
 
 .s-projects--box {
@@ -209,7 +221,7 @@ body::-webkit-scrollbar {
 	}
 	
 	.s-summary {
-		margin-top: 76vw;
+		margin-top: 78vw;
 	}
 
 	.header-title {
