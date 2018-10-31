@@ -19,3 +19,9 @@ $ sass --watch scss:css
 
 
 
+GitHub Pages
+---
+link: https://leandrocesarr.github.io/pineappleDevs/index.html
+
+
+
