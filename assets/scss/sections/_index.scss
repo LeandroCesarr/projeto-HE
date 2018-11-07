@@ -50,25 +50,29 @@ body::-webkit-scrollbar {
 	display: block;
 	position: absolute;
 	text-align: left;
-	left: -0px;
+	left: 0px;
 	top: 20px;
+	
 }
 
 .header-nav__list {
-	background-color: $white;
+	background-color: $yellow-bg;
 	text-align: left;
-	// display: none;
+	position: absolute;
 	width: 256px;
-	// height: 100vh;
+	height: 110vh;
+	top: -20px;
 	transition-duration: .6s;
-	position: relative;
 	border-radius: 4px;
-	transform: translateX(-300px)
+	transform: translateX(-300px);
+	z-index: 1;
+	padding: 77px 10px 0;
 }
 
 .header-nav__active {
 	// display: block;
 	transform: translateX(0px);
+	border-right: 2px solid $green-bg;
 
 }
 
@@ -81,17 +85,22 @@ body::-webkit-scrollbar {
 	outline: none;
 	color: $black;
 	font-size: 26px;
-	padding: 10px;
+	padding: 0 10px;
+	margin: 10px;
 	transition-duration: .6s;
-}
 
-.header-nav__link:hover {
-	text-shadow: 0 0 6px #3d3c3c;
+	&:first-child {
+		border-top: 1px solid $green-bg;
+		border-bottom: 1px solid $green-bg;
+		padding: 20px 0;
+	}
 }
 
 .hamburger {
 	outline: none;
 	margin-top: 8px;
+	position: absolute;
+	z-index: 2;
 }
 
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
