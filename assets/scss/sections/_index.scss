@@ -9,28 +9,28 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    color: $white;
+	margin: 0;
+	padding: 0;
+	color: $white;
 }
 
 
 body::-webkit-scrollbar {
 	width: 6px;
 	height: 6px;
-  }
-  body::-webkit-scrollbar-track {
+}
+body::-webkit-scrollbar-track {
 	background-color: #766e63;
 	border-radius: px;
-  }
-  body::-webkit-scrollbar-thumb {
+}
+body::-webkit-scrollbar-thumb {
 	background-color: #f7ea39;
 	border-radius: px;
-  }
-  body::-webkit-scrollbar-corner {
+}
+body::-webkit-scrollbar-corner {
 	background-color: #0f981a;
 	visibility: visible;
-  }
+}
 
 
 .header {
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
 	// display: block;
 	transform: translateX(0px);
 	border-right: 2px solid $green-bg;
-
+	
 }
 
 .header-nav__link {
@@ -85,10 +85,10 @@ body::-webkit-scrollbar {
 	outline: none;
 	color: $black;
 	font-size: 26px;
-	padding: 0 10px;
+	padding: 10px;
 	margin: 10px;
 	transition-duration: .6s;
-
+	
 	&:first-child {
 		border-top: 1px solid $green-bg;
 		border-bottom: 1px solid $green-bg;
@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
 
 .hamburger {
 	outline: none;
-	margin-top: 8px;
+	// margin-top: 8px;
 	position: absolute;
 	z-index: 2;
 }
@@ -129,13 +129,13 @@ body::-webkit-scrollbar {
 
 
 .s-summary {
-    margin-top: 42vw;
+	margin-top: 42vw;
 }
 
 .s-summary--title {
 	font-size: 35px;
 	padding-top: 6px;
-    font-weight: $font-weight-bold;
+	font-weight: $font-weight-bold;
 	font-family: $font-family-poiret;
 	color: $green-text;
 }
@@ -147,34 +147,94 @@ body::-webkit-scrollbar {
 }
 
 .s-team {
-    font-family: $font-family-poiret;
+	font-family: $font-family-roboto;
 }
 .s-team--title {
-    font-size: 24px;
+	font-size: 34px;
 	font-weight: $font-weight-bold;
+	font-family: $font-family-poiret;
+	text-align: center;
 }
 
 .s-team--persons {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.s-team--persons__name {
+	font-family: $font-family-poiret;
+}
+
+.s-team--persons__description {
+	font-size: 14px;
 }
 
 .s-team--persons__box {
-    flex-basis: 33,3%;
-    width: 300px;
-    padding: 0 5px;
-    margin: 10px auto;
-    text-align: center;
+	flex-basis: 33,3%;
+	width: 310px;
+	height: 643px;
+	padding: 0 5px;
+	margin: 10px auto;
+	text-align: center;
+	
+	.s-team--persons__box-effect {
+		width: 300px;
+		height: 350px;
+		overflow: hidden;
+		position: relative;
+		
+		.s-team--persons__box-job {
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			background-color: rgba($color: $black, $alpha: .4);
+			overflow: hidden;
+			width: 0;
+			height: 20%;
+			transition: .5s ease;
+			
+			span {
+				font-family: $font-family-poiret;
+				position: absolute;
+				font-size: 20px;
+				top: 50%;
+				left: 50%;
+				white-space: nowrap;
+				transform: translate(-50%, -50%);
+			}
+		}
+		
+		&:hover .s-team--persons__box-job{
+			width: 80%;
+		}
+
+		@include respond-to(mobile) {
+			& .s-team--persons__box-job{
+				width: 80%;
+			}
+		}
+		
+		img {
+			transform: scale(1);
+			transition-duration: .5s;
+			display: block;
+		}
+		
+		img:hover {
+			transform: scale(1.3);
+		}
+	}
 }
 
 .s-history {
-    font-family: $font-family-poiret;
+	font-family: $font-family-poiret;
 }
 
 .s-history--title {
-
+	
 }
 
 .s-projects {
@@ -184,17 +244,17 @@ body::-webkit-scrollbar {
 
 .s-projects--title {
 	text-align: left;
-
+	
 }
 
 .s-projects--box {
-    display: inline-block;
+	display: inline-block;
 	margin: 10px auto;
 	text-align: center;
 }
 
 .s-projects--box__about {
-    display: inline-block;
+	display: inline-block;
 	max-width: 560px;
 	margin: 10px;
 	vertical-align: top;
@@ -216,23 +276,23 @@ body::-webkit-scrollbar {
 	border: 1px solid #f7ea39;
 	font-family: $font-family-roboto;
 	font-weight: $font-weight-medium;
-
+	
 	transition-duration: .6s;
 }
 
 .s-projects--box__link:hover {
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 @include respond-to(mobile-tablet) {
-    .s-projects--box__about {
-        max-width: 300px;
+	.s-projects--box__about {
+		max-width: 300px;
 	}
 	
 	.s-summary {
 		margin-top: 78vw;
 	}
-
+	
 	.header-title {
 		margin-left: 40px;
 	}
