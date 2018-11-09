@@ -122,8 +122,9 @@ body::-webkit-scrollbar-corner {
 	color: $green-text;
 
 	&::after {
-		content: ' | ';
+		content: '_ ';
 		opacity: 1;
+		font-family: Arial, Helvetica, sans-serif;
 		margin-left: 5px;
 		animation: test .7s infinite;
 	}

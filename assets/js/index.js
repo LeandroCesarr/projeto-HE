@@ -57,13 +57,6 @@
 
 (function(){
 
-  var $target = [];
-      $target[0] = $('.s-summary--title').offset().top;
-      $target[1] = $('.s-team--title').offset().top;
-      $target[2] = $('.s-history--title').offset().top;
-      $target[3] = $('.s-projects--title').offset().top;
-  const title = document.querySelector('h1');
-
   function typeWriter(element, text) {
     element.innerHTML = '';
     const textArray = text.split('');
@@ -72,25 +65,14 @@
     })
   }
 
-  typeWriter(title, "< PineappleDevs / >")
-
-  function changeScroll() {
-    var documentTop = $(document).scrollTop();
-      if ((documentTop > $target[1] - 40) && (documentTop < $target[2] - 65)) {
-        title.innerHTML = "Equipe"
-      }
-      else if ((documentTop > $target[2] - 65) && (documentTop < $target[3] - 60)) {
-        title.innerHTML = "História"
-      }
-      else if (documentTop > $target[3] - 65) {
-        title.innerHTML = "Projetos"
-      }
-      else {
-        title.innerHTML = "&lt PineappleDevs / &gt"
-      }
-
-    }
-  $(document).scroll(function(){changeScroll()});
+  gumshoe.init({
+    selector: '[data-gumshoe] a', // Default link selector (must use a valid CSS selector)
+    container: window, // The element to spy on scrolling in (must be a valid DOM Node)
+    offset: 0, // Distance in pixels to offset calculations
+    callback: function () {  
+      console.log("nav");
+    } // Callback to run after setting active link
+  });
 
 })();
 
