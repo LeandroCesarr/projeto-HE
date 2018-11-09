@@ -108,10 +108,6 @@ body::-webkit-scrollbar-corner {
 	// box-shadow: 0px 0px 4px #606060;
 }
 
-.hamburger-inner::after, .hamburger-inner::before {
-	// box-shadow: 0px 0px 4px #606060;	
-}
-
 .is-active span {
 	box-shadow: none;
 }
@@ -124,6 +120,25 @@ body::-webkit-scrollbar-corner {
 	font-family: $font-family-script;
 	// text-shadow: 0 0 10px #606060;
 	color: $green-text;
+
+	&::after {
+		content: ' | ';
+		opacity: 1;
+		margin-left: 5px;
+		animation: test .7s infinite;
+	}
+
+	@keyframes test {
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		0% {
+			opacity: 1;
+		}
+	}
 }
 
 
@@ -300,7 +315,7 @@ body::-webkit-scrollbar-corner {
 	}
 	
 	.header-title {
-		margin-left: 40px;
+		margin-left: 10vw;
 	}
 }
 
@@ -315,6 +330,11 @@ body::-webkit-scrollbar-corner {
 		background-size: contain;
 		background-position: center 75px;
 	}
+
+	.header-title {
+		font-size: 24px;
+	}
 }
+
 
 

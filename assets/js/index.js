@@ -62,21 +62,31 @@
       $target[1] = $('.s-team--title').offset().top;
       $target[2] = $('.s-history--title').offset().top;
       $target[3] = $('.s-projects--title').offset().top;
+  const title = document.querySelector('h1');
+
+  function typeWriter(element, text) {
+    element.innerHTML = '';
+    const textArray = text.split('');
+    textArray.forEach((letter, i) => {
+      setTimeout(function(){element.innerHTML += letter}, 75 * i);
+    })
+  }
+
+  typeWriter(title, "< PineappleDevs / >")
 
   function changeScroll() {
     var documentTop = $(document).scrollTop();
-
-      if ((documentTop > $target[1] - 20) && (documentTop < $target[2])) {
-        document.getElementsByTagName('h1')[0].innerHTML = "Equipe"
+      if ((documentTop > $target[1] - 40) && (documentTop < $target[2] - 65)) {
+        title.innerHTML = "Equipe"
       }
-      else if ((documentTop > $target[2] - 20) && (documentTop < $target[3] - 20)) {
-        document.getElementsByTagName('h1')[0].innerHTML = "História"
+      else if ((documentTop > $target[2] - 65) && (documentTop < $target[3] - 60)) {
+        title.innerHTML = "História"
       }
-      else if (documentTop > $target[3] - 20) {
-        document.getElementsByTagName('h1')[0].innerHTML = "Projetos"
+      else if (documentTop > $target[3] - 65) {
+        title.innerHTML = "Projetos"
       }
       else {
-        document.getElementsByTagName('h1')[0].innerHTML = "&lt PineappleDevs / &gt"
+        title.innerHTML = "&lt PineappleDevs / &gt"
       }
 
     }
