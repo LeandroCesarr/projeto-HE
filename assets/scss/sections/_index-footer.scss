@@ -1,0 +1,38 @@
+.s-footer {
+	background-color:#F7EB37;
+	min-height: 100px;
+	color:#007F60;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.s-footer-content{
+	display: flex;
+	flex-wrap: nowrap;
+	ul {
+		list-style-type: none;
+		left: -20px;
+	}
+}
+
+.s-footer-content--box {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: left;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.s-footer-content--rights {
+	text-align: center;
+	padding-bottom:20px;
+	margin-bottom: 0;
+}
+
+.footer-map {
+	padding-top:20px;
+}
+.footer-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
