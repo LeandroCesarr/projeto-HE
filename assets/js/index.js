@@ -65,14 +65,21 @@
     })
   }
 
+  var title = document.getElementsByTagName('h1')[0];
+  console.log(title);
+
   gumshoe.init({
     selector: '[data-gumshoe] a', // Default link selector (must use a valid CSS selector)
     container: window, // The element to spy on scrolling in (must be a valid DOM Node)
-    offset: 0, // Distance in pixels to offset calculations
-    callback: function () {  
-      console.log("nav");
-    } // Callback to run after setting active link
+    offset: 87, // Distance in pixels to offset calculations
+    callback: function (nav) {  
+      console.log(nav);
+      var idd = nav.nav.innerHTML;
+      console.log(idd);
+      typeWriter(title, idd);
+    }
   });
+
 
 })();
 
