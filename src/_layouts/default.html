@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estrutura Landing Pages - NH Labs</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+</head>
+<body>
+  <main class="main">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </main>
+  <script src="{{ site.baseurl }}assets/js/vendor.js"></script>
+  <script src="{{ site.baseurl }}assets/js/main.js"></script>
+</body>
+</html>

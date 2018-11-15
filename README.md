@@ -1,27 +1,18 @@
-#  pineappleDevs <img src="assets/img/pineapple.svg" width="50" height="60" padding="0">
+# Gerador de site estático (Jekyll + Webpack)
 
-Esse projeto visa o desenvovimento pessoal dos envolvidos, criando de inicio, um serviÃ§o de gerenciamento de oficina totalmente online.
+Estrutura para criar landings estáticas.
 
-Pacotes a serem instalados: 
-> Node.js<br />
-> Ruby <br />
-> NPM<br />
-> SASS<br />
-
-Desenvolvimento
----
-
+Setup
 ```sh
-$ cd assets
-$ sass --watch scss:css
+$ yarn install
 ```
 
+Desenvolvimento
+```sh
+$ yarn run forrest
+```
 
-
-
-GitHub Pages
----
-link: https://leandrocesarr.github.io/pineappleDevs/index.html
-
-
-
+Compilar o html
+```sh
+$ yarn run build
+```
