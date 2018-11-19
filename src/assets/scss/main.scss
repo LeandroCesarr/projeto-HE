@@ -1,23 +1,23 @@
-// Normalize
-@import "~normalize.css";
-
 // Tools
-@import "tools/t-container";
-@import "tools/t-respond-to";
-@import "tools/t-icons";
-
-// Animations
+@import "1-tools/t-container";
+@import "1-tools/t-respond-to";
+@import "1-tools/t-icons";
 
 // Settings
-@import "settings/s-typography";
-@import "settings/s-colors";
-@import "settings/s-base";
+@import "2-settings/s-typography";
+@import "2-settings/s-colors";
+@import "2-settings/s-hamburgers";
+@import "2-settings/s-base";
 
 // Vendors
+@import "3-vendors/v-imports";
+
+// Animations
+// @import "4-animations/a-animations";
 
 // Objects
 
 // Components
 
 // Sections
-
+@import "sections/s-header";
