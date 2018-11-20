@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
-<body>
+<body class="s-body">
   <main class="main">
     {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <div class="t-background-green">
+      {{ content }}
+    </div>
+    <div class="t-background-yellow">
+      {% include footer.html %}
+    </div>
   </main>
   <script src="{{ site.baseurl }}assets/js/vendor.js"></script>
   <script src="{{ site.baseurl }}assets/js/main.js"></script>

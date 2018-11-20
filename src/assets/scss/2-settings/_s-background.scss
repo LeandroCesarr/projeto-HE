@@ -1,0 +1,19 @@
+.t-container {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.t-background-green {
+  background-color: $green-bg;
+  background-size: contain;
+}
+
+.t-background-yellow {
+  background-color: $yellow-bg;
+  // background-size: contain;
+}
+
+.t-background-green-dark {
+  background-color: #007f60;
+}
