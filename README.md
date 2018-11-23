@@ -9,20 +9,24 @@ Pacotes a serem instalados:
 > Yarn <br />
 > SASS (via ruby gem install) <br />
 
+---
 Desenvolvimento
 ---
 
 Setup
+---
 ```sh
 $ yarn install
 ```
 
 Dev
+---
 ```sh
 $ yarn dev
 ```
 
 Compilar o html
+---
 ```sh
 $ yarn build
 ```
