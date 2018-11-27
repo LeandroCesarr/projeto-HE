@@ -1,2 +1,4 @@
 .sass-cache
-css/**
+.jekyll-metadata
+node_modules
+dist/**
