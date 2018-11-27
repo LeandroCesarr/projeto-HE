@@ -118,7 +118,6 @@ body::-webkit-scrollbar-corner {
   display: inline-block;
   margin: 0 auto;
   font-family: $font-family-script;
-  // text-shadow: 0 0 10px #606060;
   color: $green-text;
 
   &::after {
@@ -127,7 +126,7 @@ body::-webkit-scrollbar-corner {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5px;
     font-size: 26px;
-    animation: test 0.7s infinite;
+    animation: test 1s infinite;
   }
 
   @keyframes test {
