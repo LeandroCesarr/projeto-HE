@@ -36,4 +36,4 @@ $ yarn build
 
 GitHub Pages
 ---
-link: https://leandrocesarr.github.io/pineappleDevs/index.html
+link: https://leandrocesarr.github.io/pineappleDevs/
