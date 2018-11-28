@@ -12,7 +12,7 @@ let config = {
   entry: ['./assets/js/main.js', './assets/scss/main.scss'],
   devtool: isDev ? 'eval-cheap-module-source-map' : 'none',
   output: {
-    path: path.resolve(__dirname, 'dist/assets'),
+    path: path.resolve(__dirname, 'docs/assets'),
     filename: 'js/main.js',
     publicPath: 'assets/'
   },
@@ -95,7 +95,7 @@ let config = {
     }),
   ],
   devServer: {
-    contentBase: [ path.resolve(__dirname, './dist') ],
+    contentBase: [ path.resolve(__dirname, './docs') ],
     inline: true,
     port: 4000,
     open: true,
