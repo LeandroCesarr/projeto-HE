@@ -25,14 +25,14 @@ class MenuPage {
   setupNavMenuLinks() {
     const links = this.navMenu.querySelectorAll('a');
 
-    for (let i = 0; i < links.length; i++) {
+    for (let i = 0; i < links.length; i += 1) {
       links[i].addEventListener('click', (event) => {
         event.preventDefault();
 
         const sectionId = event.currentTarget.getAttribute('href');
         // var offset = event.currentTarget.getAttribute('data-offset');
 
-        this.jumpToSection(sectionId);
+        MenuPage.jumpToSection(sectionId);
         this.toggleMenu();
       });
     }
@@ -49,13 +49,6 @@ class MenuPage {
 
 export default {
   create(navMenuButton, navMenu) {
-  //   const elements = document.querySelectorAll(elements);
-  //   let instances = [];
-
-  //   Array.from(elements).forEach((elm) => {
-  //     instances = new MenuPage(elm);
-  //   });
-  // }
     return new MenuPage(navMenuButton, navMenu);
   },
 };
