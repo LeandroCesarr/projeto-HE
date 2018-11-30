@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.s-projects--title {
-  text-align: left;
-  font-family: $font-family-poiret;
-}
-
 .s-projects--box {
   display: inline-block;
   margin: 10px auto;
@@ -24,24 +19,6 @@
 .s-projects--box__title {
   margin-top: 0;
   font-family: $font-family-poiret;
-}
-
-.s-projects--box__link {
-  background-color: #fceb54;
-  text-decoration: none;
-  display: inline-block;
-  margin: 6px 0;
-  padding: 10px 6px;
-  color: $black;
-  border-radius: 6px;
-  border: 1px solid #f7ea39;
-  font-family: $font-family-main;
-  font-weight: $font-weight-medium;
-  transition-duration: 0.6s;
-}
-
-.s-projects--box__link:hover {
-  margin-left: 20px;
 }
 
 @include respond-to(mobile-tablet) {

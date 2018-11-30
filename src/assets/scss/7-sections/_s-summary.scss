@@ -2,18 +2,11 @@
   margin-top: 42vw;
 }
 
-.s-summary--title {
-  font-size: 35px;
-  padding-top: 6px;
-  font-weight: $font-weight-bold;
-  font-family: $font-family-poiret;
-  color: $green-text;
-}
-
 .s-summary--description {
   font-family: $font-family-main;
   color: #eee;
   font-size: 14px;
+  text-align: left;
 }
 
 @include respond-to(mobile-tablet) {
