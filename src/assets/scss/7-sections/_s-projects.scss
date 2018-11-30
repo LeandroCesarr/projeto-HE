@@ -16,13 +16,8 @@
   text-align: left;
 }
 
-.s-projects--box__title {
-  margin-top: 0;
-  font-family: $font-family-poiret;
-}
-
 @include respond-to(mobile-tablet) {
   .s-projects--box__about {
-    max-width: 300px;
+    max-width: 325px;
   }
 }

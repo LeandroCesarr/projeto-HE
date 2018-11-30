@@ -1,6 +1,7 @@
 .o-title-main {
   font-size: 35px;
   padding-top: 6px;
+  text-align: left;
   font-weight: $font-weight-bold;
   font-family: $font-family-poiret;
   color: $green-text;
@@ -11,20 +12,32 @@
   font-size: 2.5rem;
   font-family: $font-family-poiret;
   position: relative;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-
-  // &::after {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   background-color: $green-text;
-  //   height: 4px;
-  //   width: 80%;
-  //   bottom: -10px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  // }
 }
 
+.o-title__project {
+  margin-top: 0;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $green-text;
+    z-index: -1;
+    transform: translate(-10px, 10px);
+  }
+}
+
+.o-title__project--span {
+  padding: 10px;
+  font-family: $font-family-poiret;
+  color: $black;
+  background-color: #fceb54;
+  z-index: 2;
+  display: inline-block;
+}
