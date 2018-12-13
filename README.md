@@ -1,7 +1,6 @@
-#  pineappleDevs <img src="src/assests/static/pineapple.svg" width="50" height="60" padding="0">
+#  pineappleDevs <img src="src/assests/static/favicon.png" width="50" height="60" padding="0">
 
-Esse projeto visa o desenvovimento pessoal dos envolvidos, criando de inicio, um serviço de gerenciamento de oficina totalmente online.
-
+Esse projeto visa o desenvovimento pessoal dos envolvidos, criando de inicio, uma página institucional.
 Pacotes a serem instalados: 
 > Node.js<br />
 > Jekyll <br />
