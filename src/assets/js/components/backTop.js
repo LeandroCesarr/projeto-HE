@@ -8,7 +8,6 @@ class BackTop {
   }
 
   setup() {
-    console.log(this.elm);
     this.elm.addEventListener('click', () => {
       BackTop.backTopJump(this.href);
     });

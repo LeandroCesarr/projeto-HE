@@ -6,7 +6,7 @@ import BackTop from './components/backTop';
 
 MenuPage.create('nav-menu-button', 'navBox');
 typeWriter.create();
-BackTop.create('[data-back]');
+BackTop.create();
 
 AOS.init({
   offset: 160,
