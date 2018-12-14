@@ -1,8 +1,10 @@
 .s-footer {
-  padding: 20px 0 30px;
+  margin-top: 20px;
+  padding: 10px 0;
   color: $green-text;
   font-family: $font-family-main;
   position: relative;
+  border-top: 2px solid $green-text;
 }
 
 .s-footer__up {
@@ -20,15 +22,15 @@
 
 .s-footer__title {
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .s-footer__name {
-  font-family: serif;
   font-family: $font-family-script;
   font-weight: bold;
   display: inline-block;
-  margin-bottom: 10px;
+  padding-right: 10px;
+  font-size: 20px;
 }
 
 .s-socials__list {
@@ -39,30 +41,8 @@
   margin: 0 auto;
   text-align: center;
   display: inline-block;
-  border-bottom: 1px solid $green-text;
+  border-bottom: 2px solid $green-text;
   position: relative;
-
-  // &::after,
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   background: $green-text;
-  //   height: 40px;
-  //   width: 1px;
-  // }
-
-  // &::before {
-  //   left: 7px;
-  //   bottom: -1px;
-  //   transform: rotate(20deg);
-  // }
-
-  // &::after {
-  //   right: 7px;
-  //   bottom: -1px;
-  //   transform: rotate(-20deg);
-  // }
 }
 
 .s-socials__item {
@@ -71,6 +51,11 @@
   &:not(:last-child) {
     margin-right: 3vw;
   }
+}
+
+.s-socials__link {
+  font-size: 0;
+  display: inline-block;
 
   img {
     height: 40px;
