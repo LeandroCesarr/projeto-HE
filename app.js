@@ -14,6 +14,7 @@ nunjucks.configure('src/views', {
 });
 
 app.use(router);
+app.use('/public', express.static(__dirname + '/public'));
 
 app.listen(port, () => {
   notifier.notify({
